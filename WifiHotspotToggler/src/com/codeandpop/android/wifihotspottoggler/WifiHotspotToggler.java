@@ -38,14 +38,14 @@ public class WifiHotspotToggler extends Activity {
 		if (state == WIFI_AP_STATE.WIFI_AP_STATE_DISABLING || state == WIFI_AP_STATE.WIFI_AP_STATE_DISABLED)
 		{			
 			boolean success = wifiApManager.setWifiApEnabled(null, true);
-			if (success) message = "Enabling hotspot..."; 
-			else message = "Enabling hotspot failed.";
+			if (success) message = "Enabling WiFi hiotspot..."; 
+			else message = "Enabling WiFi hotspot failed.";
 		}
 		else if (state == WIFI_AP_STATE.WIFI_AP_STATE_ENABLING || state == WIFI_AP_STATE.WIFI_AP_STATE_ENABLED)
 		{
 			boolean success = wifiApManager.setWifiApEnabled(null, false);
-			if (success) message = "Disabling hotspot..."; 
-			else message = "Disabling hotspot failed.";
+			if (success) message = "Disabling WiFi hotspot..."; 
+			else message = "Disabling WiFi hotspot failed.";
 		}
 		else if (state == WIFI_AP_STATE.WIFI_AP_STATE_FAILED)
 		{
